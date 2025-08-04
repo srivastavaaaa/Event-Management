@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recruitment - VIT Clubs Events</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header" role="banner">
+        <nav class="nav" role="navigation" aria-label="Main navigation">
+            <div class="nav-brand">
+                <a href="index.html" class="brand-link" aria-label="Home">VIT CLUBS</a>
+            </div>
+            
+            <ul class="nav-menu" role="menubar">
+                <li role="none"><a href="index.html" class="nav-link" role="menuitem">Home</a></li>
+                <li role="none"><a href="calendar.html" class="nav-link" role="menuitem">Calendar</a></li>
+                <li role="none"><a href="events.html" class="nav-link" role="menuitem">Events</a></li>
+                <li role="none"><a href="recruitment.html" class="nav-link active" role="menuitem" aria-current="page">Recruitment</a></li>
+                <li role="none"><a href="registration.html" class="nav-link" role="menuitem">Registration</a></li>
+                <li role="none"><a href="#" class="nav-link" role="menuitem">About</a></li>
+                <li role="none"><a href="#" class="nav-link" role="menuitem">Help</a></li>
+            </ul>
+            
+            <div class="nav-actions">
+                <button class="btn btn-icon-only" id="dark-mode-toggle" aria-label="Toggle dark mode">
+                    <span class="icon-sun" aria-hidden="true">☀️</span>
+                    <span class="icon-moon" aria-hidden="true">🌙</span>
+                </button>
+                <a href="login.html" class="btn btn-primary" aria-label="Login">
+                    Login
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main" role="main">
+        <section class="recruitment-hero" aria-labelledby="recruitment-title">
+            <div class="container">
+                <h1 id="recruitment-title" class="recruitment-title">Club Recruitment</h1>
+                <p class="recruitment-subtitle">Join exciting clubs and teams at VIT. Find your passion and make new friends!</p>
+            </div>
+        </section>
+
+        <section class="recruitment-section" aria-label="Recruitment opportunities">
+            <div class="container">
+                <div class="recruitment-filters">
+                    <button class="filter-btn active" data-filter="all">All Clubs</button>
+                    <button class="filter-btn" data-filter="tech">Tech</button>
+                    <button class="filter-btn" data-filter="cultural">Cultural</button>
+                    <button class="filter-btn" data-filter="sports">Sports</button>
+                    <button class="filter-btn" data-filter="academic">Academic</button>
+                </div>
+
+                <div class="recruitment-grid">
+                    <!-- Tech Club -->
+                    <div class="recruitment-card-full" data-category="tech">
+                        <div class="recruitment-header">
+                            <div class="club-icon">💻</div>
+                            <div class="club-info">
+                                <h3 class="club-title">Tech Club</h3>
+                                <p class="club-description">Leading technology innovation and development at VIT</p>
+                                <div class="club-meta">
+                                    <span class="member-count">👥 150+ members</span>
+                                    <span class="active-status">🟢 Currently Recruiting</span>
+                                </div>
+                            </div>
+                            <div class="recruitment-status">
+                                <span class="status-badge open">Open</span>
+                                <span class="deadline">Deadline: Aug 30, 2025</span>
+                            </div>
+                        </div>
+                        <div class="teams-section">
+                            <h4>Teams Recruiting:</h4>
+                            <div class="teams-grid">
+                                <div class="team-item">
+                                    <span class="team-name">Web Development Team</span>
+                                    <span class="team-positions">5 positions</span>
+                                    <span class="team-skills">HTML, CSS, JavaScript</span>
+                                </div>
+                                <div class="team-item">
+                                    <span class="team-name">Mobile App Team</span>
+                                    <span class="team-positions">3 positions</span>
+                                    <span class="team-skills">React Native, Flutter</span>
+                                </div>
+                                <div class="team-item">
+                                    <span class="team-name">AI/ML Team</span>
+                                    <span class="team-positions">4 positions</span>
+                                    <span class="team-skills">Python, TensorFlow</span>
+                                </div>
+                                <div class="team-item">
+                                    <span class="team-name">Design Team</span>
+                                    <span class="team-positions">2 positions</span>
+                                    <span class="team-skills">UI/UX, Figma</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="recruitment-actions">
+                            <button class="btn btn-primary">Apply Now</button>
+                            <button class="btn btn-secondary">Learn More</button>
+                        </div>
+                    </div>
+
+                    <!-- Cultural Club -->
+                    <div class="recruitment-card-full" data-category="cultural">
+                        <div class="recruitment-header">
+                            <div class="club-icon">🎭</div>
+                            <div class="club-info">
+                                <h3 class="club-title">Cultural Club</h3>
+                                <p class="club-description">Promoting arts, music, dance, and cultural activities</p>
+                                <div class="club-meta">
+                                    <span class="member-count">👥 120+ members</span>
+                                    <span class="active-status">🟢 Currently Recruiting</span>
+                                </div>
+                            </div>
+                            <div class="recruitment-status">
+                                <span class="status-badge open">Open</span>
+                                <span class="deadline">Deadline: Sep 15, 2025</span>
+                            </div>
+                        </div>
+                        <div class="teams-section">
+                            <h4>Teams Recruiting:</h4>
+                            <div class="teams-grid">
+                                <div class="team-item">
+                                    <span class="team-name">Dance Team</span>
+                                    <span class="team-positions">8 positions</span>
+                                    <span class="team-skills">Classical, Contemporary</span>
+                                </div>
+                                <div class="team-item">
+                                    <span class="team-name">Music Band</span>
+                                    <span class="team-positions">6 positions</span>
+                                    <span class="team-skills">Guitar, Drums, Vocals</span>
+                                </div>
+                                <div class="team-item">
+                                    <span class="team-name">Drama Team</span>
+                                    <span class="team-positions">10 positions</span>
+                                    <span class="team-skills">Acting, Direction</span>
+                                </div>
+                                <div class="team-item">
+                                    <span class="team-name">Art Team</span>
+                                    <span class="team-positions">4 positions</span>
+                                    <span class="team-skills">Painting, Digital Art</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="recruitment-actions">
+                            <button class="btn btn-primary">Apply Now</button>
+                            <button class="btn btn-secondary">Learn More</button>
+                        </div>
+                    </div>
+
+                    <!-- Sports Club -->
+                    <div class="recruitment-card-full" data-category="sports">
+                        <div class="recruitment-header">
+                            <div class="club-icon">⚽</div>
+                            <div class="club-info">
+                                <h3 class="club-title">Sports Club</h3>
+                                <p class="club-description">Fostering sportsmanship and athletic excellence</p>
+                                <div class="club-meta">
+                                    <span class="member-count">👥 200+ members</span>
+                                    <span class="active-status">🟢 Currently Recruiting</span>
+                                </div>
+                            </div>
+                            <div class="recruitment-status">
+                                <span class="status-badge open">Open</span>
+                                <span class="deadline">Deadline: Aug 25, 2025</span>
+                            </div>
+                        </div>
+                        <div class="teams-section">
+                            <h4>Teams Recruiting:</h4>
+                            <div class="teams-grid">
+                                <div class="team-item">
+                                    <span class="team-name">Football Team</span>
+                                    <span class="team-positions">15 positions</span>
+                                    <span class="team-skills">All positions</span>
+                                </div>
+                                <div class="team-item">
+                                    <span class="team-name">Basketball Team</span>
+                                    <span class="team-positions">12 positions</span>
+                                    <span class="team-skills">All positions</span>
+                                </div>
+                                <div class="team-item">
+                                    <span class="team-name">Cricket Team</span>
+                                    <span class="team-positions">18 positions</span>
+                                    <span class="team-skills">Batsmen, Bowlers</span>
+                                </div>
+                                <div class="team-item">
+                                    <span class="team-name">Athletics Team</span>
+                                    <span class="team-positions">20 positions</span>
+                                    <span class="team-skills">Track & Field</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="recruitment-actions">
+                            <button class="btn btn-primary">Apply Now</button>
+                            <button class="btn btn-secondary">Learn More</button>
+                        </div>
+                    </div>
+
+                    <!-- Academic Club -->
+                    <div class="recruitment-card-full" data-category="academic">
+                        <div class="recruitment-header">
+                            <div class="club-icon">📚</div>
+                            <div class="club-info">
+                                <h3 class="club-title">Academic Club</h3>
+                                <p class="club-description">Promoting academic excellence and research</p>
+                                <div class="club-meta">
+                                    <span class="member-count">👥 80+ members</span>
+                                    <span class="active-status">🟢 Currently Recruiting</span>
+                                </div>
+                            </div>
+                            <div class="recruitment-status">
+                                <span class="status-badge open">Open</span>
+                                <span class="deadline">Deadline: Sep 10, 2025</span>
+                            </div>
+                        </div>
+                        <div class="teams-section">
+                            <h4>Teams Recruiting:</h4>
+                            <div class="teams-grid">
+                                <div class="team-item">
+                                    <span class="team-name">Research Team</span>
+                                    <span class="team-positions">6 positions</span>
+                                    <span class="team-skills">Research, Analysis</span>
+                                </div>
+                                <div class="team-item">
+                                    <span class="team-name">Debate Team</span>
+                                    <span class="team-positions">8 positions</span>
+                                    <span class="team-skills">Public Speaking</span>
+                                </div>
+                                <div class="team-item">
+                                    <span class="team-name">Quiz Team</span>
+                                    <span class="team-positions">5 positions</span>
+                                    <span class="team-skills">General Knowledge</span>
+                                </div>
+                                <div class="team-item">
+                                    <span class="team-name">Literary Team</span>
+                                    <span class="team-positions">4 positions</span>
+                                    <span class="team-skills">Writing, Poetry</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="recruitment-actions">
+                            <button class="btn btn-primary">Apply Now</button>
+                            <button class="btn btn-secondary">Learn More</button>
+                        </div>
+                    </div>
+
+                    <!-- Photography Club -->
+                    <div class="recruitment-card-full" data-category="cultural">
+                        <div class="recruitment-header">
+                            <div class="club-icon">📸</div>
+                            <div class="club-info">
+                                <h3 class="club-title">Photography Club</h3>
+                                <p class="club-description">Capturing moments and telling stories through lens</p>
+                                <div class="club-meta">
+                                    <span class="member-count">👥 60+ members</span>
+                                    <span class="active-status">🟢 Currently Recruiting</span>
+                                </div>
+                            </div>
+                            <div class="recruitment-status">
+                                <span class="status-badge open">Open</span>
+                                <span class="deadline">Deadline: Sep 20, 2025</span>
+                            </div>
+                        </div>
+                        <div class="teams-section">
+                            <h4>Teams Recruiting:</h4>
+                            <div class="teams-grid">
+                                <div class="team-item">
+                                    <span class="team-name">Event Photography</span>
+                                    <span class="team-positions">4 positions</span>
+                                    <span class="team-skills">Event Coverage</span>
+                                </div>
+                                <div class="team-item">
+                                    <span class="team-name">Portrait Team</span>
+                                    <span class="team-positions">3 positions</span>
+                                    <span class="team-skills">Portrait Photography</span>
+                                </div>
+                                <div class="team-item">
+                                    <span class="team-name">Videography Team</span>
+                                    <span class="team-positions">5 positions</span>
+                                    <span class="team-skills">Video Editing</span>
+                                </div>
+                                <div class="team-item">
+                                    <span class="team-name">Social Media</span>
+                                    <span class="team-positions">2 positions</span>
+                                    <span class="team-skills">Content Creation</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="recruitment-actions">
+                            <button class="btn btn-primary">Apply Now</button>
+                            <button class="btn btn-secondary">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <div class="contact-cards">
+                    <div class="contact-card">
+                        <div class="contact-icon">📧</div>
+                        <h4>Email</h4>
+                        <p>clubs@vit.ac.in</p>
+                        <button class="btn btn-small">Send Email</button>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">📞</div>
+                        <h4>Phone</h4>
+                        <p>+91 9178235766</p>
+                        <button class="btn btn-small">Call Now</button>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">📍</div>
+                        <h4>Location</h4>
+                        <p>VIT Bhopal University Bhopal</p>
+                        <button class="btn btn-small">Get Directions</button>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">💬</div>
+                        <h4>Social Media</h4>
+                        <p>Follow us for updates</p>
+                        <button class="btn btn-small">Connect</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

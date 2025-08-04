@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar - VIT Clubs Events</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header" role="banner">
+        <nav class="nav" role="navigation" aria-label="Main navigation">
+            <div class="nav-brand">
+                <a href="index.html" class="brand-link" aria-label="Home">VIT CLUBS</a>
+            </div>
+            
+            <ul class="nav-menu" role="menubar">
+                <li role="none"><a href="index.html" class="nav-link" role="menuitem">Home</a></li>
+                <li role="none"><a href="calendar.html" class="nav-link active" role="menuitem" aria-current="page">Calendar</a></li>
+                <li role="none"><a href="events.html" class="nav-link" role="menuitem">Events</a></li>
+                <li role="none"><a href="recruitment.html" class="nav-link" role="menuitem">Recruitment</a></li>
+                <li role="none"><a href="registration.html" class="nav-link" role="menuitem">Registration</a></li>
+                <li role="none"><a href="#" class="nav-link" role="menuitem">About</a></li>
+                <li role="none"><a href="#" class="nav-link" role="menuitem">Help</a></li>
+            </ul>
+            
+            <div class="nav-actions">
+                <button class="btn btn-icon-only" id="dark-mode-toggle" aria-label="Toggle dark mode">
+                    <span class="icon-sun" aria-hidden="true">☀️</span>
+                    <span class="icon-moon" aria-hidden="true">🌙</span>
+                </button>
+                <a href="login.html" class="btn btn-primary" aria-label="Login">
+                    Login
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main" role="main">
+        <section class="calendar-hero" aria-labelledby="calendar-title">
+            <div class="container">
+                <h1 id="calendar-title" class="calendar-title">Event Calendar</h1>
+                <p class="calendar-subtitle">Browse events by month and discover what's happening at VIT</p>
+            </div>
+        </section>
+
+        <section class="calendar-section" aria-label="Monthly calendar">
+            <div class="container">
+                <div class="calendar-container">
+                    <div class="calendar-header">
+                        <button class="calendar-nav-btn" id="prev-month" aria-label="Previous month">‹</button>
+                        <h2 class="current-month" id="current-month">January 2025</h2>
+                        <button class="calendar-nav-btn" id="next-month" aria-label="Next month">›</button>
+                    </div>
+                    
+                    <div class="calendar-grid">
+                        <div class="calendar-days-header">
+                            <div class="day-header">Sun</div>
+                            <div class="day-header">Mon</div>
+                            <div class="day-header">Tue</div>
+                            <div class="day-header">Wed</div>
+                            <div class="day-header">Thu</div>
+                            <div class="day-header">Fri</div>
+                            <div class="day-header">Sat</div>
+                        </div>
+                        
+                        <div class="calendar-days" id="calendar-days">
+                            <!-- Calendar days will be populated by JavaScript -->
+                        </div>
+                    </div>
+                    
+                    <div class="calendar-events">
+                        <div class="event-dot" style="top: 15%; left: 20%;" data-event="New Year Workshop" data-date="2025-01-15"></div>
+                        <div class="event-dot" style="top: 45%; left: 60%;" data-event="Tech Meetup" data-date="2025-01-15"></div>
+                        <div class="event-dot" style="top: 75%; left: 40%;" data-event="Cultural Fest" data-date="2025-01-20"></div>
+                        <div class="event-dot" style="top: 25%; left: 30%;" data-event="Valentine's Dance" data-date="2025-02-14"></div>
+                        <div class="event-dot" style="top: 55%; left: 70%;" data-event="Hackathon" data-date="2025-02-25"></div>
+                        <div class="event-dot" style="top: 35%; left: 25%;" data-event="Spring Festival" data-date="2025-03-21"></div>
+                        <div class="event-dot" style="top: 65%; left: 65%;" data-event="Tech Conference" data-date="2025-03-28"></div>
+                        <div class="event-dot" style="top: 15%; left: 35%;" data-event="Easter Celebration" data-date="2025-04-15"></div>
+                        <div class="event-dot" style="top: 45%; left: 75%;" data-event="Science Fair" data-date="2025-04-20"></div>
+                        <div class="event-dot" style="top: 25%; left: 40%;" data-event="Summer Camp" data-date="2025-05-20"></div>
+                        <div class="event-dot" style="top: 55%; left: 60%;" data-event="Career Fair" data-date="2025-05-25"></div>
+                        <div class="event-dot" style="top: 35%; left: 25%;" data-event="Graduation Day" data-date="2025-06-15"></div>
+                        <div class="event-dot" style="top: 65%; left: 70%;" data-event="Alumni Meet" data-date="2025-06-20"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <div class="contact-cards">
+                    <div class="contact-card">
+                        <div class="contact-icon">📧</div>
+                        <h4>Email</h4>
+                        <p>clubs@vit.ac.in</p>
+                        <button class="btn btn-small">Send Email</button>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">📞</div>
+                        <h4>Phone</h4>
+                        <p>+91 9178235766</p>
+                        <button class="btn btn-small">Call Now</button>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">📍</div>
+                        <h4>Location</h4>
+                        <p>VIT Bhopal University Bhopal</p>
+                        <button class="btn btn-small">Get Directions</button>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">💬</div>
+                        <h4>Social Media</h4>
+                        <p>Follow us for updates</p>
+                        <button class="btn btn-small">Connect</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIT Clubs Events</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header" role="banner">
+        <nav class="nav" role="navigation" aria-label="Main navigation">
+            <div class="nav-brand">
+                <a href="index.html" class="brand-link" aria-label="Home">VIT CLUBS</a>
+            </div>
+            
+            <ul class="nav-menu" role="menubar">
+                <li role="none"><a href="index.html" class="nav-link active" role="menuitem" aria-current="page">Home</a></li>
+                <li role="none"><a href="calendar.html" class="nav-link" role="menuitem">Calendar</a></li>
+                <li role="none"><a href="events.html" class="nav-link" role="menuitem">Events</a></li>
+                <li role="none"><a href="recruitment.html" class="nav-link" role="menuitem">Recruitment</a></li>
+                <li role="none"><a href="registration.html" class="nav-link" role="menuitem">Registration</a></li>
+                <li role="none"><a href="#" class="nav-link" role="menuitem">About</a></li>
+                
+            </ul>
+            
+            <div class="nav-actions">
+                <button class="btn btn-icon-only" id="dark-mode-toggle" aria-label="Toggle dark mode">
+                    <span class="icon-sun" aria-hidden="true">☀️</span>
+                    <span class="icon-moon" aria-hidden="true">🌙</span>
+                </button>
+                <a href="login.html" class="btn btn-primary" aria-label="Login">
+                    Login
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main" role="main">
+        <section class="hero" aria-labelledby="hero-title">
+            <div class="hero-content">
+                <h1 id="hero-title" class="hero-title">
+                    College Events
+                    <span class="hero-subtitle">Events</span>
+                </h1>
+                <p class="hero-description">
+                    Discover and explore exciting campus activities and events happening around VIT.
+                </p>
+                <button class="btn btn-search" aria-label="Search for events">
+                    <span class="btn-icon" aria-hidden="true">🔍</span>
+                    <p class="btn-text">Search events</p>
+                </button>
+            </div>
+            
+            <div class="hero-visual" aria-hidden="true">
+                <div class="circle circle-large"></div>
+                <div class="circle circle-medium"></div>
+                <div class="circle circle-small"></div>
+                <div class="circle circle-tiny"></div>
+                <div class="circle circle-extra-large"></div>
+                <div class="circle circle-medium-alt"></div>
+                <div class="circle circle-small-alt"></div>
+                <div class="circle circle-floating"></div>
+            </div>
+        </section>
+
+        <section class="upcoming-events" aria-labelledby="events-title">
+            <div class="container">
+                <h2 id="events-title" class="section-title">Upcoming Events</h2>
+                <div class="events-grid">
+                    <div class="event-card">
+                        <div class="event-date">
+                            <span class="day">15</span>
+                            <span class="month">Aug</span>
+                        </div>
+                        <div class="event-content">
+                            <h3>Tech Fest 2025</h3>
+                            <p class="event-time">10:00 AM - 6:00 PM</p>
+                            <p class="event-location">Main Auditorium</p>
+                            <p class="event-location">Club: Tech Club</p>
+                            <button class="btn btn-small">Register Now</button>
+                        </div>
+                    </div>
+                    <div class="event-card">
+                        <div class="event-date">
+                            <span class="day">20</span>
+                            <span class="month">Aug</span>
+                        </div>
+                        <div class="event-content">
+                            <h3>Cultural Night</h3>
+                            <p class="event-time">7:00 PM - 11:00 PM</p>
+                            <p class="event-location">Open Air Theatre</p>
+                            <p class="event-location">Club: Cultural Club</p>
+                            <button class="btn btn-small">Register Now</button>
+                        </div>
+                    </div>
+                    <div class="event-card">
+                        <div class="event-date">
+                            <span class="day">25</span>
+                            <span class="month">Aug</span>
+                        </div>
+                        <div class="event-content">
+                            <h3>Hackathon 2025</h3>
+                            <p class="event-time">9:00 AM - 9:00 PM</p>
+                            <p class="event-location">Computer Center</p>
+                            <p class="event-location">Club: Tech Club</p>
+                            <button class="btn btn-small">Register Now</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="clubs-showcase" aria-labelledby="clubs-title">
+            <div class="container">
+                <h2 id="clubs-title" class="section-title">Popular Clubs</h2>
+                <div class="clubs-grid">
+                    <div class="club-card">
+                        <div class="club-icon">💻</div>
+                        <h3>Tech Club</h3>
+                        <p>Explore the latest in technology through workshops, hackathons, and industry talks.</p>
+                        <span class="member-count">150+ members</span>
+                    </div>
+                    <div class="club-card">
+                        <div class="club-icon">🎨</div>
+                        <h3>Arts Club</h3>
+                        <p>Express your creativity through painting, music, dance, and cultural performances.</p>
+                        <span class="member-count">120+ members</span>
+                    </div>
+                    <div class="club-card">
+                        <div class="club-icon">🏃</div>
+                        <h3>Sports Club</h3>
+                        <p>Stay active and competitive with various sports activities and tournaments.</p>
+                        <span class="member-count">200+ members</span>
+                    </div>
+                    <div class="club-card">
+                        <div class="club-icon">📚</div>
+                        <h3>Literary Club</h3>
+                        <p>Develop your writing skills through poetry, debates, and literary competitions.</p>
+                        <span class="member-count">80+ members</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <div class="contact-cards">
+                    <div class="contact-card">
+                        <div class="contact-icon">📧</div>
+                        <h4>Email</h4>
+                        <p>clubs@vit.ac.in</p>
+                        <button class="btn btn-small">Send Email</button>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">📞</div>
+                        <h4>Phone</h4>
+                        <p>+91 9178235766</p>
+                        <button class="btn btn-small">Call Now</button>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">📍</div>
+                        <h4>Location</h4>
+                        <p>VIT Bhopal University Bhopal</p>
+                        <button class="btn btn-small">Get Directions</button>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">💬</div>
+                        <h4>Social Media</h4>
+                        <p>Follow us for updates</p>
+                        <button class="btn btn-small">Connect</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

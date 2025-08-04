@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration - VIT Clubs Events</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header" role="banner">
+        <nav class="nav" role="navigation" aria-label="Main navigation">
+            <div class="nav-brand">
+                <a href="index.html" class="brand-link" aria-label="Home">VIT CLUBS</a>
+            </div>
+            
+            <ul class="nav-menu" role="menubar">
+                <li role="none"><a href="index.html" class="nav-link" role="menuitem">Home</a></li>
+                <li role="none"><a href="calendar.html" class="nav-link" role="menuitem">Calendar</a></li>
+                <li role="none"><a href="events.html" class="nav-link" role="menuitem">Events</a></li>
+                <li role="none"><a href="recruitment.html" class="nav-link" role="menuitem">Recruitment</a></li>
+                <li role="none"><a href="registration.html" class="nav-link active" role="menuitem" aria-current="page">Registration</a></li>
+                <li role="none"><a href="#" class="nav-link" role="menuitem">About</a></li>
+                <li role="none"><a href="#" class="nav-link" role="menuitem">Help</a></li>
+            </ul>
+            
+            <div class="nav-actions">
+                <button class="btn btn-icon-only" id="dark-mode-toggle" aria-label="Toggle dark mode">
+                    <span class="icon-sun" aria-hidden="true">☀️</span>
+                    <span class="icon-moon" aria-hidden="true">🌙</span>
+                </button>
+                <a href="login.html" class="btn btn-primary" aria-label="Login">
+                    Login
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main" role="main">
+        <section class="registration-hero" aria-labelledby="registration-title">
+            <div class="container">
+                <h1 id="registration-title" class="registration-title">Event Registration</h1>
+                <p class="registration-subtitle">Register for events and pay securely online. Join the excitement!</p>
+            </div>
+        </section>
+
+        <section class="registration-section" aria-label="Event registration">
+            <div class="container">
+                <div class="registration-filters">
+                    <button class="filter-btn active" data-filter="all">All Events</button>
+                    <button class="filter-btn" data-filter="upcoming">Upcoming</button>
+                    <button class="filter-btn" data-filter="free">Free Events</button>
+                    <button class="filter-btn" data-filter="paid">Paid Events</button>
+                </div>
+
+                <div class="registration-grid">
+                    <!-- Tech Fest 2025 -->
+                    <div class="registration-card-full" data-category="upcoming paid">
+                        <div class="registration-header">
+                            <div class="event-icon">💻</div>
+                            <div class="event-info">
+                                <h3 class="event-title">Tech Fest 2025</h3>
+                                <p class="event-club">Organized by: Tech Club</p>
+                                <div class="event-meta">
+                                    <span class="event-date">📅 August 15, 2025</span>
+                                    <span class="event-time">🕐 10:00 AM - 6:00 PM</span>
+                                    <span class="event-location">📍 Main Auditorium</span>
+                                </div>
+                            </div>
+                            <div class="registration-status">
+                                <span class="status-badge open">Registration Open</span>
+                                <span class="seats-left">🎫 45 seats left</span>
+                            </div>
+                        </div>
+                        <div class="event-description">
+                            <p>Join us for the biggest tech event of the year! Experience cutting-edge technology demonstrations, coding competitions, and networking opportunities with industry professionals.</p>
+                            <div class="event-tags">
+                                <span class="tag">Coding</span>
+                                <span class="tag">AI/ML</span>
+                                <span class="tag">Networking</span>
+                            </div>
+                        </div>
+                        <div class="payment-section">
+                            <div class="price-info">
+                                <span class="price">₹500</span>
+                                <span class="price-label">Registration Fee</span>
+                            </div>
+                            <div class="payment-options">
+                                <button class="payment-btn active" data-payment="card">
+                                    <span class="payment-icon">💳</span>
+                                    <span>Card</span>
+                                </button>
+                                <button class="payment-btn" data-payment="upi">
+                                    <span class="payment-icon">📱</span>
+                                    <span>UPI</span>
+                                </button>
+                                <button class="payment-btn" data-payment="netbanking">
+                                    <span class="payment-icon">🏦</span>
+                                    <span>Net Banking</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="registration-actions">
+                            <button class="btn btn-primary" onclick="openPaymentModal('Tech Fest 2025', 500)">Pay & Register</button>
+                            <button class="btn btn-secondary">Learn More</button>
+                        </div>
+                    </div>
+
+                    <!-- Cultural Night -->
+                    <div class="registration-card-full" data-category="upcoming paid">
+                        <div class="registration-header">
+                            <div class="event-icon">🎭</div>
+                            <div class="event-info">
+                                <h3 class="event-title">Cultural Night</h3>
+                                <p class="event-club">Organized by: Cultural Club</p>
+                                <div class="event-meta">
+                                    <span class="event-date">📅 August 20, 2025</span>
+                                    <span class="event-time">🕐 7:00 PM - 11:00 PM</span>
+                                    <span class="event-location">📍 Open Air Theatre</span>
+                                </div>
+                            </div>
+                            <div class="registration-status">
+                                <span class="status-badge open">Registration Open</span>
+                                <span class="seats-left">🎫 78 seats left</span>
+                            </div>
+                        </div>
+                        <div class="event-description">
+                            <p>A spectacular evening of music, dance, drama, and cultural performances showcasing the diverse talents of VIT students.</p>
+                            <div class="event-tags">
+                                <span class="tag">Music</span>
+                                <span class="tag">Dance</span>
+                                <span class="tag">Drama</span>
+                            </div>
+                        </div>
+                        <div class="payment-section">
+                            <div class="price-info">
+                                <span class="price">₹200</span>
+                                <span class="price-label">Entry Fee</span>
+                            </div>
+                            <div class="payment-options">
+                                <button class="payment-btn active" data-payment="card">
+                                    <span class="payment-icon">💳</span>
+                                    <span>Card</span>
+                                </button>
+                                <button class="payment-btn" data-payment="upi">
+                                    <span class="payment-icon">📱</span>
+                                    <span>UPI</span>
+                                </button>
+                                <button class="payment-btn" data-payment="netbanking">
+                                    <span class="payment-icon">🏦</span>
+                                    <span>Net Banking</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="registration-actions">
+                            <button class="btn btn-primary" onclick="openPaymentModal('Cultural Night', 200)">Pay & Register</button>
+                            <button class="btn btn-secondary">Learn More</button>
+                        </div>
+                    </div>
+
+                    <!-- Hackathon 2025 -->
+                    <div class="registration-card-full" data-category="upcoming paid">
+                        <div class="registration-header">
+                            <div class="event-icon">🚀</div>
+                            <div class="event-info">
+                                <h3 class="event-title">Hackathon 2025</h3>
+                                <p class="event-club">Organized by: Tech Club</p>
+                                <div class="event-meta">
+                                    <span class="event-date">📅 August 25, 2025</span>
+                                    <span class="event-time">🕐 9:00 AM - 9:00 PM</span>
+                                    <span class="event-location">📍 Computer Center</span>
+                                </div>
+                            </div>
+                            <div class="registration-status">
+                                <span class="status-badge open">Registration Open</span>
+                                <span class="seats-left">🎫 32 seats left</span>
+                            </div>
+                        </div>
+                        <div class="event-description">
+                            <p>24-hour coding challenge where teams compete to build innovative solutions. Prizes worth ₹50,000 up for grabs!</p>
+                            <div class="event-tags">
+                                <span class="tag">Competition</span>
+                                <span class="tag">Innovation</span>
+                                <span class="tag">Prizes</span>
+                            </div>
+                        </div>
+                        <div class="payment-section">
+                            <div class="price-info">
+                                <span class="price">₹300</span>
+                                <span class="price-label">Entry Fee</span>
+                            </div>
+                            <div class="payment-options">
+                                <button class="payment-btn active" data-payment="card">
+                                    <span class="payment-icon">💳</span>
+                                    <span>Card</span>
+                                </button>
+                                <button class="payment-btn" data-payment="upi">
+                                    <span class="payment-icon">📱</span>
+                                    <span>UPI</span>
+                                </button>
+                                <button class="payment-btn" data-payment="netbanking">
+                                    <span class="payment-icon">🏦</span>
+                                    <span>Net Banking</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="registration-actions">
+                            <button class="btn btn-primary" onclick="openPaymentModal('Hackathon 2025', 300)">Pay & Register</button>
+                            <button class="btn btn-secondary">Learn More</button>
+                        </div>
+                    </div>
+
+                    <!-- Art Exhibition (Free) -->
+                    <div class="registration-card-full" data-category="upcoming free">
+                        <div class="registration-header">
+                            <div class="event-icon">🎨</div>
+                            <div class="event-info">
+                                <h3 class="event-title">Art Exhibition</h3>
+                                <p class="event-club">Organized by: Arts Club</p>
+                                <div class="event-meta">
+                                    <span class="event-date">📅 September 5, 2025</span>
+                                    <span class="event-time">🕐 2:00 PM - 8:00 PM</span>
+                                    <span class="event-location">📍 Art Gallery</span>
+                                </div>
+                            </div>
+                            <div class="registration-status">
+                                <span class="status-badge open">Registration Open</span>
+                                <span class="seats-left">🎫 Unlimited</span>
+                            </div>
+                        </div>
+                        <div class="event-description">
+                            <p>Showcase your artistic talents in this open exhibition featuring paintings, sculptures, digital art, and photography from VIT students.</p>
+                            <div class="event-tags">
+                                <span class="tag">Art</span>
+                                <span class="tag">Exhibition</span>
+                                <span class="tag">Creative</span>
+                            </div>
+                        </div>
+                        <div class="payment-section">
+                            <div class="price-info">
+                                <span class="price">Free</span>
+                                <span class="price-label">No Entry Fee</span>
+                            </div>
+                            <div class="payment-options">
+                                <button class="payment-btn active" data-payment="free">
+                                    <span class="payment-icon">🎫</span>
+                                    <span>Free Entry</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="registration-actions">
+                            <button class="btn btn-primary" onclick="registerFree('Art Exhibition')">Register Free</button>
+                            <button class="btn btn-secondary">Learn More</button>
+                        </div>
+                    </div>
+
+                    <!-- Sports Meet -->
+                    <div class="registration-card-full" data-category="upcoming paid">
+                        <div class="registration-header">
+                            <div class="event-icon">⚽</div>
+                            <div class="event-info">
+                                <h3 class="event-title">Inter-College Sports Meet</h3>
+                                <p class="event-club">Organized by: Sports Club</p>
+                                <div class="event-meta">
+                                    <span class="event-date">📅 September 15, 2025</span>
+                                    <span class="event-time">🕐 8:00 AM - 6:00 PM</span>
+                                    <span class="event-location">📍 Sports Complex</span>
+                                </div>
+                            </div>
+                            <div class="registration-status">
+                                <span class="status-badge open">Registration Open</span>
+                                <span class="seats-left">🎫 120 seats left</span>
+                            </div>
+                        </div>
+                        <div class="event-description">
+                            <p>Compete in various sports including football, basketball, cricket, and athletics. Represent your college and win medals!</p>
+                            <div class="event-tags">
+                                <span class="tag">Football</span>
+                                <span class="tag">Basketball</span>
+                                <span class="tag">Cricket</span>
+                            </div>
+                        </div>
+                        <div class="payment-section">
+                            <div class="price-info">
+                                <span class="price">₹100</span>
+                                <span class="price-label">Registration</span>
+                            </div>
+                            <div class="payment-options">
+                                <button class="payment-btn active" data-payment="card">
+                                    <span class="payment-icon">💳</span>
+                                    <span>Card</span>
+                                </button>
+                                <button class="payment-btn" data-payment="upi">
+                                    <span class="payment-icon">📱</span>
+                                    <span>UPI</span>
+                                </button>
+                                <button class="payment-btn" data-payment="netbanking">
+                                    <span class="payment-icon">🏦</span>
+                                    <span>Net Banking</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="registration-actions">
+                            <button class="btn btn-primary" onclick="openPaymentModal('Inter-College Sports Meet', 100)">Pay & Register</button>
+                            <button class="btn btn-secondary">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Payment Modal -->
+    <div id="payment-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modal-title">Payment for Event</h3>
+                <button class="modal-close" onclick="closePaymentModal()">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="payment-form">
+                    <div class="form-group">
+                        <label for="card-number">Card Number</label>
+                        <input type="text" id="card-number" placeholder="1234 5678 9012 3456" maxlength="19">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="expiry">Expiry Date</label>
+                            <input type="text" id="expiry" placeholder="MM/YY" maxlength="5">
+                        </div>
+                        <div class="form-group">
+                            <label for="cvv">CVV</label>
+                            <input type="text" id="cvv" placeholder="123" maxlength="3">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="card-name">Cardholder Name</label>
+                        <input type="text" id="card-name" placeholder="John Doe">
+                    </div>
+                    <div class="payment-summary">
+                        <div class="summary-item">
+                            <span>Event:</span>
+                            <span id="summary-event">Event Name</span>
+                        </div>
+                        <div class="summary-item">
+                            <span>Amount:</span>
+                            <span id="summary-amount">₹0</span>
+                        </div>
+                        <div class="summary-item total">
+                            <span>Total:</span>
+                            <span id="summary-total">₹0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" onclick="closePaymentModal()">Cancel</button>
+                <button class="btn btn-primary" onclick="processPayment()">Pay Now</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer" role="contentinfo">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <div class="contact-cards">
+                    <div class="contact-card">
+                        <div class="contact-icon">📧</div>
+                        <h4>Email</h4>
+                        <p>clubs@vit.ac.in</p>
+                        <button class="btn btn-small">Send Email</button>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">📞</div>
+                        <h4>Phone</h4>
+                        <p>+91 9178235766</p>
+                        <button class="btn btn-small">Call Now</button>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">📍</div>
+                        <h4>Location</h4>
+                        <p>VIT Bhopal University Bhopal</p>
+                        <button class="btn btn-small">Get Directions</button>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">💬</div>
+                        <h4>Social Media</h4>
+                        <p>Follow us for updates</p>
+                        <button class="btn btn-small">Connect</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

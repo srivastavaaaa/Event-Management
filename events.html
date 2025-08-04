@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events - VIT Clubs Events</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header" role="banner">
+        <nav class="nav" role="navigation" aria-label="Main navigation">
+            <div class="nav-brand">
+                <a href="index.html" class="brand-link" aria-label="Home">VIT CLUBS</a>
+            </div>
+            
+            <ul class="nav-menu" role="menubar">
+                <li role="none"><a href="index.html" class="nav-link" role="menuitem">Home</a></li>
+                <li role="none"><a href="calendar.html" class="nav-link" role="menuitem">Calendar</a></li>
+                <li role="none"><a href="events.html" class="nav-link active" role="menuitem" aria-current="page">Events</a></li>
+                <li role="none"><a href="recruitment.html" class="nav-link" role="menuitem">Recruitment</a></li>
+                <li role="none"><a href="registration.html" class="nav-link" role="menuitem">Registration</a></li>
+                <li role="none"><a href="#" class="nav-link" role="menuitem">About</a></li>
+                <li role="none"><a href="#" class="nav-link" role="menuitem">Help</a></li>
+            </ul>
+            
+            <div class="nav-actions">
+                <button class="btn btn-icon-only" id="dark-mode-toggle" aria-label="Toggle dark mode">
+                    <span class="icon-sun" aria-hidden="true">☀️</span>
+                    <span class="icon-moon" aria-hidden="true">🌙</span>
+                </button>
+                <a href="login.html" class="btn btn-primary" aria-label="Login">
+                    Login
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main" role="main">
+        <section class="events-hero" aria-labelledby="events-title">
+            <div class="container">
+                <h1 id="events-title" class="events-title">All Events</h1>
+                <p class="events-subtitle">Discover exciting events happening at VIT - from tech workshops to cultural festivals</p>
+            </div>
+        </section>
+
+        <section class="events-section" aria-label="Events listing">
+            <div class="container">
+                <div class="events-filters">
+                    <button class="filter-btn active" data-filter="all">All Events</button>
+                    <button class="filter-btn" data-filter="tech">Tech</button>
+                    <button class="filter-btn" data-filter="cultural">Cultural</button>
+                    <button class="filter-btn" data-filter="sports">Sports</button>
+                    <button class="filter-btn" data-filter="academic">Academic</button>
+                </div>
+
+                <div class="events-grid">
+                    <!-- Tech Events -->
+                    <div class="event-card-full" data-category="tech">
+                        <div class="event-header">
+                            <div class="event-icon">💻</div>
+                            <div class="event-info">
+                                <h3 class="event-title">Tech Fest 2025</h3>
+                                <p class="event-club">Organized by: Tech Club</p>
+                                <div class="event-meta">
+                                    <span class="event-date">📅 August 15, 2025</span>
+                                    <span class="event-time">🕐 10:00 AM - 6:00 PM</span>
+                                    <span class="event-location">📍 Main Auditorium</span>
+                                </div>
+                            </div>
+                            <div class="event-fee">
+                                <span class="fee-amount">₹500</span>
+                                <span class="fee-label">Registration Fee</span>
+                            </div>
+                        </div>
+                        <div class="event-description">
+                            <p>Join us for the biggest tech event of the year! Experience cutting-edge technology demonstrations, coding competitions, and networking opportunities with industry professionals.</p>
+                            <div class="event-tags">
+                                <span class="tag">Coding</span>
+                                <span class="tag">AI/ML</span>
+                                <span class="tag">Networking</span>
+                            </div>
+                        </div>
+                        <div class="event-actions">
+                            <button class="btn btn-primary">Register Now</button>
+                            <button class="btn btn-secondary">Learn More</button>
+                        </div>
+                    </div>
+
+                    <div class="event-card-full" data-category="tech">
+                        <div class="event-header">
+                            <div class="event-icon">🚀</div>
+                            <div class="event-info">
+                                <h3 class="event-title">Hackathon 2025</h3>
+                                <p class="event-club">Organized by: Tech Club</p>
+                                <div class="event-meta">
+                                    <span class="event-date">📅 August 25, 2025</span>
+                                    <span class="event-time">🕐 9:00 AM - 9:00 PM</span>
+                                    <span class="event-location">📍 Computer Center</span>
+                                </div>
+                            </div>
+                            <div class="event-fee">
+                                <span class="fee-amount">₹300</span>
+                                <span class="fee-label">Entry Fee</span>
+                            </div>
+                        </div>
+                        <div class="event-description">
+                            <p>24-hour coding challenge where teams compete to build innovative solutions. Prizes worth ₹50,000 up for grabs!</p>
+                            <div class="event-tags">
+                                <span class="tag">Competition</span>
+                                <span class="tag">Innovation</span>
+                                <span class="tag">Prizes</span>
+                            </div>
+                        </div>
+                        <div class="event-actions">
+                            <button class="btn btn-primary">Register Now</button>
+                            <button class="btn btn-secondary">Learn More</button>
+                        </div>
+                    </div>
+
+                    <!-- Cultural Events -->
+                    <div class="event-card-full" data-category="cultural">
+                        <div class="event-header">
+                            <div class="event-icon">🎭</div>
+                            <div class="event-info">
+                                <h3 class="event-title">Cultural Night</h3>
+                                <p class="event-club">Organized by: Cultural Club</p>
+                                <div class="event-meta">
+                                    <span class="event-date">📅 August 20, 2025</span>
+                                    <span class="event-time">🕐 7:00 PM - 11:00 PM</span>
+                                    <span class="event-location">📍 Open Air Theatre</span>
+                                </div>
+                            </div>
+                            <div class="event-fee">
+                                <span class="fee-amount">₹200</span>
+                                <span class="fee-label">Entry Fee</span>
+                            </div>
+                        </div>
+                        <div class="event-description">
+                            <p>A spectacular evening of music, dance, drama, and cultural performances showcasing the diverse talents of VIT students.</p>
+                            <div class="event-tags">
+                                <span class="tag">Music</span>
+                                <span class="tag">Dance</span>
+                                <span class="tag">Drama</span>
+                            </div>
+                        </div>
+                        <div class="event-actions">
+                            <button class="btn btn-primary">Register Now</button>
+                            <button class="btn btn-secondary">Learn More</button>
+                        </div>
+                    </div>
+
+                    <div class="event-card-full" data-category="cultural">
+                        <div class="event-header">
+                            <div class="event-icon">🎨</div>
+                            <div class="event-info">
+                                <h3 class="event-title">Art Exhibition</h3>
+                                <p class="event-club">Organized by: Arts Club</p>
+                                <div class="event-meta">
+                                    <span class="event-date">📅 September 5, 2025</span>
+                                    <span class="event-time">🕐 2:00 PM - 8:00 PM</span>
+                                    <span class="event-location">📍 Art Gallery</span>
+                                </div>
+                            </div>
+                            <div class="event-fee">
+                                <span class="fee-amount">Free</span>
+                                <span class="fee-label">No Entry Fee</span>
+                            </div>
+                        </div>
+                        <div class="event-description">
+                            <p>Showcase your artistic talents in this open exhibition featuring paintings, sculptures, digital art, and photography from VIT students.</p>
+                            <div class="event-tags">
+                                <span class="tag">Art</span>
+                                <span class="tag">Exhibition</span>
+                                <span class="tag">Creative</span>
+                            </div>
+                        </div>
+                        <div class="event-actions">
+                            <button class="btn btn-primary">Register Now</button>
+                            <button class="btn btn-secondary">Learn More</button>
+                        </div>
+                    </div>
+
+                    <!-- Sports Events -->
+                    <div class="event-card-full" data-category="sports">
+                        <div class="event-header">
+                            <div class="event-icon">⚽</div>
+                            <div class="event-info">
+                                <h3 class="event-title">Inter-College Sports Meet</h3>
+                                <p class="event-club">Organized by: Sports Club</p>
+                                <div class="event-meta">
+                                    <span class="event-date">📅 September 15, 2025</span>
+                                    <span class="event-time">🕐 8:00 AM - 6:00 PM</span>
+                                    <span class="event-location">📍 Sports Complex</span>
+                                </div>
+                            </div>
+                            <div class="event-fee">
+                                <span class="fee-amount">₹100</span>
+                                <span class="fee-label">Registration</span>
+                            </div>
+                        </div>
+                        <div class="event-description">
+                            <p>Compete in various sports including football, basketball, cricket, and athletics. Represent your college and win medals!</p>
+                            <div class="event-tags">
+                                <span class="tag">Football</span>
+                                <span class="tag">Basketball</span>
+                                <span class="tag">Cricket</span>
+                            </div>
+                        </div>
+                        <div class="event-actions">
+                            <button class="btn btn-primary">Register Now</button>
+                            <button class="btn btn-secondary">Learn More</button>
+                        </div>
+                    </div>
+
+                    <!-- Academic Events -->
+                    <div class="event-card-full" data-category="academic">
+                        <div class="event-header">
+                            <div class="event-icon">📚</div>
+                            <div class="event-info">
+                                <h3 class="event-title">Academic Conference 2025</h3>
+                                <p class="event-club">Organized by: Academic Club</p>
+                                <div class="event-meta">
+                                    <span class="event-date">📅 October 10, 2025</span>
+                                    <span class="event-time">🕐 9:00 AM - 5:00 PM</span>
+                                    <span class="event-location">📍 Conference Hall</span>
+                                </div>
+                            </div>
+                            <div class="event-fee">
+                                <span class="fee-amount">₹400</span>
+                                <span class="fee-label">Conference Fee</span>
+                            </div>
+                        </div>
+                        <div class="event-description">
+                            <p>Present your research papers and attend sessions by renowned academicians. Great opportunity for networking and learning.</p>
+                            <div class="event-tags">
+                                <span class="tag">Research</span>
+                                <span class="tag">Networking</span>
+                                <span class="tag">Academic</span>
+                            </div>
+                        </div>
+                        <div class="event-actions">
+                            <button class="btn btn-primary">Register Now</button>
+                            <button class="btn btn-secondary">Learn More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer" role="contentinfo">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <div class="contact-cards">
+                    <div class="contact-card">
+                        <div class="contact-icon">📧</div>
+                        <h4>Email</h4>
+                        <p>clubs@vit.ac.in</p>
+                        <button class="btn btn-small">Send Email</button>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">📞</div>
+                        <h4>Phone</h4>
+                        <p>+91 9178235766</p>
+                        <button class="btn btn-small">Call Now</button>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">📍</div>
+                        <h4>Location</h4>
+                        <p>VIT Bhopal University Bhopal</p>
+                        <button class="btn btn-small">Get Directions</button>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">💬</div>
+                        <h4>Social Media</h4>
+                        <p>Follow us for updates</p>
+                        <button class="btn btn-small">Connect</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
